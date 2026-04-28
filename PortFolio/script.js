@@ -1,3 +1,12 @@
 function abrirBandas(){
-    alert("Bandas")
+   
+}
+function abrirColaboradores(){
+
+}
+function abrirContatos(){
+
+}
+function abrirShop(){
+    
 }
