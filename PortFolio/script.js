@@ -1,0 +1,3 @@
+function abrirBandas(){
+    alert("Bandas")
+}

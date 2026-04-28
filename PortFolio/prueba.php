@@ -1,35 +1,34 @@
-<form method="post" action="showform.php">
+<html>
 
-    
-    <fieldset>
+    <body>
+        
+        <?php
+if(empty($_POST)) {
+    print "<p>No Data was submitted.</p>";
+    print "</body></html>";
+    exit();
+}
 
+function clear_user_input($value) {
+    if (get_magic_quotes_gpc())
+        $value=stripslashes($value);
+    $value= str_replace( "\n", '', trim($value));
+    $value= str_replace("\r", '', $value);
+    return $value;
+}
 
-        <h2>Crie Sua Conta</h2>
+$body = "here is the data that was submmited:\n";
 
-        <ul>
-            
-            <li>
-                
-            <label for="usuario">Nome de Usuario</label>
-            <input type="text" id="usuario" name="usuario" class="large"/>
-                   
-           </li>
+foreach($_POST as $key => $value){
+    $key = clear_user_input($key);
+    $value =clear_user_input($value);
+    if($key=='extras')
+}
 
-           <li>
-                 
-            <label for="senha">Crie Sua Senha</label>
-            <input type="text" id="senha" name="semha" class="large"/>
-
-           </li>
-            
-        </ul>
-
-        <input type="submit"
-        class="cria_seu_usuario"
-        value="Cria sua Conta">
-
-
-    </fieldset>
-
-
-</form>
+if(is_array($_POST['extras'])){
+    $body .= "$key: ";
+    $counter =1;
+    foreach ($_POST['extras']) as $value {
+        if (size)
+    }
+}
