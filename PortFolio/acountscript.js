@@ -10,10 +10,13 @@ function acessarconta(){
     senha = prompt("Senha")
 
 if(usuario != newusuario || senha != newsenha){
-    alert("Errada a senha ou usuario")
+
+    document.getElementById("Conta").innerHTML = "Senha ou Usuario Errado, Tenta de novo"
+
+    //alert("Errada a senha ou usuario")
 }
 else{
-window.location.href = "/Repos%20T3eK/Personal-Project/PortFolio/Index.html"
+window.location.href = "index.html"
 }
 }
 
