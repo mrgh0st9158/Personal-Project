@@ -1,6 +1,14 @@
 button{
-background-color: cadetblue;
+background-color: #22333c
+}
+button{
+    color: aliceblue;
+}
+body{
+ 
+    
+    background-color: #22333b
 }
 output{
-    color: brown;
+    color: rgb(230, 63, 63);
 }

@@ -1,3 +1,23 @@
 button{
-background-color: cadetblue;
+background-color: #22333c
+}
+button{
+    color: aliceblue;
+}
+body{
+ 
+    
+    background-color: #22333b
+}
+p{
+    color: aliceblue;
+}
+h2{
+color: rgb(191, 225, 253);
+}
+h1{
+    color:rgb(191, 225, 253)
+}
+label{
+    color: aliceblue;
 }
