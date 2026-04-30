@@ -4,11 +4,14 @@ color: aliceblue;
 border-left-color: aqua;
 border-right-color: aqua;
 border-radius: 10%;
+
 }
-body{
- 
+
+body{ 
+
+    background-color: #22333b;
     
-    background-color: #22333b
+
 }
 p{
     color: aliceblue;
@@ -20,5 +23,7 @@ h1{
     color:rgb(191, 225, 253)
 }
 label{
+    
     color: aliceblue;
+    list-style: circle;
 }
