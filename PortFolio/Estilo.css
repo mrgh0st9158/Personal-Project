@@ -3,6 +3,8 @@ background-color: #22333c
 }
 button{
     color: aliceblue;
+    border-left-color: aqua;
+    border-right-color: aqua;
 }
 body{
  
