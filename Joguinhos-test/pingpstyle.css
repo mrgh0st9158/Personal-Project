@@ -44,6 +44,7 @@ body{
     position: absolute;
     bottom: 50%;
     transform: translate(-50%, 50%);
+    z-index: 2;
 }
 
 .pala1{
@@ -63,7 +64,6 @@ body{
 }
 
 .bola{
-    background-color: aliceblue;
     width: 24px;
     height: 24px;
     position: absolute;
@@ -71,5 +71,67 @@ body{
     left: 400px;
     transform: translate(-50%, 50%);
     border-radius: 50%;
+    background-image: url("bola.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    z-index: 3;
+
 }
 
+.btns{
+    width:fit-content;
+    margin: 0px auto;
+    bottom: 200px;
+}
+button{
+    margin: 0 10px;
+padding: 20px 30px;
+cursor: pointer;
+text-transform: uppercase;
+}
+button:hover{
+        background-color: #ffceda;
+    scale: 1.10;
+    border-radius: 7px;
+    
+}
+
+.personaje{
+
+    position: absolute;
+
+    width: 128px;
+    height: 128px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    image-rendering: pixelated;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+}
+
+/* IZQUIERDA */
+
+.personaje1{
+
+    left: 20px;
+
+    background-image: url("2personaje1.png");
+
+}
+
+/* DERECHA */
+
+.personaje2{
+
+    right: 20px;
+
+    background-image: url("personaje1.png");
+
+}
