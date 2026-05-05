@@ -252,9 +252,7 @@ class marcador {
 
 }
 
-// ==========================
 // INICIO DEL JUEGO
-// ==========================
 
 var bordesTablero = new bordes(0, 800, 0, 600);
 
@@ -263,16 +261,12 @@ var velocidadInicial = 6;
 var juegoActivo = false;
 var juegoTerminado = false;
 
-// ==========================
 // PERSONAJES
-// ==========================
 
 var personaje1 = document.querySelector(".personaje1");
 var personaje2 = document.querySelector(".personaje2");
 
-// ==========================
 // DIRECCIÓN INICIAL
-// ==========================
 
 var dirXInicial =
     Math.random() < 0.5 ? -1 : 1;
@@ -280,9 +274,7 @@ var dirXInicial =
 var dirYInicial =
     (Math.random() * 1.2) - 0.6;
 
-// ==========================
 // BOLA
-// ==========================
 
 var bola = new Bola(
 
@@ -297,9 +289,7 @@ var bola = new Bola(
 
 );
 
-// ==========================
 // PALAS
-// ==========================
 
 var pala1 = new pala(
 
@@ -327,9 +317,7 @@ var pala2 = new pala(
 
 );
 
-// ==========================
 // MARCADORES
-// ==========================
 
 var marcador1 =
     new marcador(document.querySelector(".marcador1"));
@@ -337,9 +325,7 @@ var marcador1 =
 var marcador2 =
     new marcador(document.querySelector(".marcador2"));
 
-// ==========================
 // PERSONAJES SIGUEN PALAS
-// ==========================
 
 function actualizarPersonajes() {
 
@@ -351,9 +337,7 @@ function actualizarPersonajes() {
 
 }
 
-// ==========================
 // ANIMACIÓN PERSONAJES
-// ==========================
 
 function animarPersonaje(personaje, lado) {
 
@@ -409,9 +393,7 @@ function animarPersonaje(personaje, lado) {
 
 }
 
-// ==========================
 // UPDATE
-// ==========================
 
 function Update() {
 
@@ -428,9 +410,7 @@ function Update() {
 
 }
 
-// ==========================
 // CHOQUES
-// ==========================
 
 function comprobarPalazo() {
 
@@ -494,9 +474,8 @@ function comprobarPalazo() {
 
 }
 
-// ==========================
+
 // GOLES
-// ==========================
 
 function verificarGol() {
 
@@ -576,10 +555,7 @@ function verificarGol() {
 
 }
 
-// ==========================
 // BOTÓN
-// ==========================
-
 function comezarJogo() {
 
     marcador1.pontos = 0;
@@ -603,7 +579,6 @@ function comezarJogo() {
         nuevoDirY
 
     );
-
     // REINICIAR VELOCIDADES
 
     bola.velocidad = velocidadInicial;
@@ -616,9 +591,7 @@ function comezarJogo() {
 
 }
 
-// ==========================
 // GAME LOOP
-// ==========================
 
 function tick() {
 
