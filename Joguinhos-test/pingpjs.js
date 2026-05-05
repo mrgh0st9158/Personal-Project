@@ -33,7 +33,7 @@ resetear(){
 
 }
 
-class bola extends objetoMovil {
+class Bola extends objetoMovil {
     constructor(bordesTablero, elemento, velocidad, dirX, dirY){
         super(bordesTablero, elemento);
         this.velocidad = velocidad;
@@ -153,7 +153,7 @@ class marcador{
 
 var bordesTablero = new bordes(0, 800, 0, 600);
 var dir = Math.random() *2 * Math.PI;
-var bola = new bola(bordesTablero, document.querySelector(".bola"), 6,
+var bola = new Bola(bordesTablero, document.querySelector(".bola"), 6,
  Math.cos(dir), Math.sin(dir));
 var pala1 = new pala (bordesTablero, document.querySelector(".pala1"),
  7, "w", "s");
