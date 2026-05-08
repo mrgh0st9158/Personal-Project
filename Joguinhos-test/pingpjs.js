@@ -432,12 +432,12 @@ function comprobarPalazo() {
 
             // VELOCIDAD BOLA
 
-            bola.velocidad += 0.20;
+            bola.velocidad += 1;
 
             // VELOCIDAD PALAS
 
-            pala1.velocidad += 0.10;
-            pala2.velocidad += 0.10;
+            pala1.velocidad += 0.50;
+            pala2.velocidad += 0.50;
 
         }
 

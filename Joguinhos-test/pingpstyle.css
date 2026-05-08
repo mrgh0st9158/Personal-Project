@@ -122,7 +122,7 @@ button:hover{
 
     left: 20px;
 
-    background-image: url("2personaje1.png");
+    background-image: url("personaje1.png");
 
 }
 
@@ -132,6 +132,6 @@ button:hover{
 
     right: 20px;
 
-    background-image: url("personaje1.png");
+    background-image: url("2personaje1.png");
 
 }

@@ -67,3 +67,21 @@ a{
     color: #c7c7c7;
     border-bottom-style: outs;
 }
+img{
+width: 250px;
+height: 200px;
+
+}
+#inicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+align-items: center;
+}
+
+#display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: ;
+}
