@@ -8,4 +8,22 @@
 }
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("Captura_de_tela_2026-05-08_002259.png");
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h3{
+    text-align: center;
+}
+output{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    border-style: ridge;
+    border-radius: 1000px;
+    background-color: aliceblue;
 }
