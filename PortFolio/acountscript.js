@@ -15,7 +15,5 @@ function novoUsuario(){
 function criarConta(){
 esconderTodo();
 document.getElementById("inicioSeccion").classList.add("ativa")
-
-
 }
 
