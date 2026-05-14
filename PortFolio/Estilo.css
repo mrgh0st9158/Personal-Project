@@ -1,3 +1,33 @@
+/* ============================imagens=========================== */
+.elvisIntroducao{
+    width: 465px;
+    height: 250px;
+
+}
+
+.ledZepellin_bandasClassicas{
+    width: 400px;
+    height: 250px;
+    
+}
+
+.darkmetal_metalSubgeneros{
+    width: 390px;
+    height: 250px;
+}
+
+.glamrock_metalSubgeneros{
+    width: 400px;
+    height: 250px;
+}
+
+.blackSabbath_bandasClassicas{
+    width: 390px;
+    height: 250px;
+
+}
+
+/* ============================Layout Site=========================== */
 nav .btns{
     width: fit-content;
     margin: 0 auto;
@@ -5,12 +35,19 @@ nav .btns{
     margin-top: 20px;
 }
 
+a{
+    color: #000000;
+    border-bottom-style: outs;
+}
+
+
 button{
-background-color: #22333c;
-color: #c7c7c7;
-margin: 0 10px;
-padding: 5.5px 10px;
-cursor: pointer;
+    background-color: #22333c;
+    color: #c7c7c7;
+    margin: 0 10px;
+    padding: 5.5px 10px;
+    
+    cursor: pointer;
 }
 button:hover{
     background-color: #69021c;
@@ -25,6 +62,11 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     padding: 0;
     
+}
+
+label{
+ 
+    color: rgb(2, 38, 68);
 }
 
 p{
@@ -52,18 +94,7 @@ margin-bottom: 10px;
     text-align: center;
 }
 
-#tituloIntroducao{
-    display: flex;
-    flex-direction: column;
-    margin-right: 950px;
-    font-style: italic
-}
-
-label{
- 
-    color: rgb(2, 38, 68);
-}
-
+/* ============================Telas=========================== */
 .tela{
     display: none;
 }
@@ -71,15 +102,14 @@ label{
     display: block;
 }
 
-a{
-    color: #000000;
-    border-bottom-style: outs;
+/* ============================Organização Site=========================== */
+#tituloIntroducao{
+    display: flex;
+    flex-direction: column;
+    margin-right: 950px;
+    font-style: italic
 }
-.elvisIntroducao{
-width: 465px;
-height: 250px;
 
-}
 #inicios.ativa{
     display: flex;
     flex-direction: column;
@@ -87,7 +117,7 @@ height: 250px;
     align-items: center;
 }
 
-#display{
+#conteinerIntroducao{
     display: flex;
     justify-content: left;
     align-items: center;
@@ -95,19 +125,7 @@ height: 250px;
 
 }
 
-.blackSabbath_bandasClassicas{
-    width: 390px;
-    height: 250px;
-
-}
-
-.ledZepellin_bandasClassicas{
-    width: 400px;
-    height: 250px;
-    
-}
-
-#display2{
+#conteinerBandasClassicas{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -116,25 +134,17 @@ height: 250px;
     margin-top: 20px;
 }
 
-.darkmetal_metalSubgeneros{
-    width: 390px;
-    height: 250px;
-}
-
-.glamrock_metalSubgeneros{
-    width: 400px;
-    height: 250px;
-}
-
-#display3 a{
+#conteinerMetalESeusSubgeneros a{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    gap: 10px;
+
 }
 
-#displayFoto{
+#outlineIntroducao{
     outline-color: rgb(2, 38, 68);
     border-color: #c7c7c7;
     outline-style: solid;
@@ -191,6 +201,5 @@ height: 250px;
     text-align: left;
     margin-right: 60px;
     width: 585px;
-    
-    
+       
 }
