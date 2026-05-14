@@ -14,8 +14,8 @@ let criarNovoUsuario, novaSenha, usuario, senha
 
  function criarConta(){
 
-  criarNovoUsuario = document.getElementById("usuarioNovo").innerHTML = criarNovoUsuario
-  novaSenha = document.getElementById("senhaNova").innerHTML = novaSenha
+  criarNovoUsuario = document.getElementById("usuarioNovo").value;
+  novaSenha = document.getElementById("senhaNova").value;
 
   esconderTodo();
   document.getElementById("inicioSeccion").classList.add("ativa")
@@ -23,8 +23,8 @@ let criarNovoUsuario, novaSenha, usuario, senha
 
  function iniciaSeccion(){
 
-  usuario = document.getElementById("usuarios").innerHTML = usuario
-  senha = document.getElementById("senhas").innerHTML = senha
+  usuario = document.getElementById("usuarios").value;
+  senha = document.getElementById("senhas").value;
 
   if(usuario == criarNovoUsuario && senha == novaSenha){
     
