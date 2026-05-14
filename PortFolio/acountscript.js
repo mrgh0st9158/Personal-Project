@@ -13,7 +13,25 @@ function novoUsuario(){
 }
 
 function criarConta(){
+
+  criarNovoUsuario = document.getElementById("usuarioNovo").innerHTML = criarNovoUsuario
+  novaSenha = document.getElementById("senhaNova").innerHTML = novaSenha
+
 esconderTodo();
 document.getElementById("inicioSeccion").classList.add("ativa")
 }
 
+function iniciaSeccion(){
+
+  usuario = document.getElementById("usuarios").innerHTML = usuario
+  senha = document.getElementById("senhas").innerHTML = senha
+
+  if(usuario != criarNovoUsuario || senha != novaSenha){
+
+    document.getElementById("errado").innerHTML = "Nome ou Senha errado!"
+  }
+  else{
+    window.location = "Index.html"
+  }
+
+}
