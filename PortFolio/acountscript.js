@@ -1,4 +1,4 @@
-let novoUsuario, novaSenha, usuario, senha 
+let criarNovoUsuario, novaSenha, usuario, senha 
 
 
 function esconderTodo(){
