@@ -8,7 +8,7 @@
 
 }
 
-/* ============================imagens=========================== */
+/* ============================Imagens=========================== */
 .elvisIntroducao{
     width: 465px;
     height: 250px;
@@ -145,10 +145,10 @@ margin-bottom: 10px;
 }
 
 #outlineIntroducao{
-    outline-color: rgb(2, 38, 68);
-    border-color: #c7c7c7;
     outline-style: solid;
     border-style: solid;
+    outline-color: rgb(2, 38, 68);
+    border-color: #c7c7c7;
     border-bottom-width: 20px;
     width: 465px;
     outline-offset: 6px;
@@ -205,4 +205,15 @@ margin-bottom: 10px;
     margin-right: 60px;
     width: 585px;
        
+}
+
+#outlineBandasClassicas{
+    outline-style: solid;
+    border-style: solid;
+    outline-color: rgb(2, 38, 68);
+    border-color: #c7c7c7;
+    border-bottom-width: 250px;
+    outline-offset: 6px;
+    
+
 }
