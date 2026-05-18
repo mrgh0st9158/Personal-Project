@@ -16,9 +16,15 @@
 }
 
 .ledZepellin_bandasClassicas{
-    width: 400px;
-    height: 250px;
+    width: 380px;
+    height: 230px;
     
+}
+
+.blackSabbath_bandasClassicas{
+    width: 400px;
+    height: 230px;
+
 }
 
 .darkmetal_metalSubgeneros{
@@ -31,11 +37,7 @@
     height: 250px;
 }
 
-.blackSabbath_bandasClassicas{
-    width: 390px;
-    height: 250px;
 
-}
 
 /* ============================Layout Site=========================== */
 nav .btns{
@@ -75,18 +77,17 @@ body{
 
 p{
     color: rgb(0, 0, 0);
-    width: 500px;
     text-align: center;
     margin: 0 auto;
 
 }
 
 h2{
-color: rgb(0, 0, 0);
-text-align: center;
-border-bottom-style: solid;
-border-bottom-width: fit-content;
-margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width: fit-content;
+    margin-bottom: 10px;
 
 }
 
@@ -124,40 +125,31 @@ margin-bottom: 10px;
 
 }
 
-#conteinerBandasClassicas{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
 
-}
-
-#conteinerMetalESeusSubgeneros a{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    gap: 10px;
-
-}
-
-#outlineIntroducao{
-    outline-style: solid;
-    border-style: solid;
-    outline-color: rgb(2, 38, 68);
-    border-color: #c7c7c7;
-    border-bottom-width: 20px;
-    width: 465px;
-    outline-offset: 6px;
+#outlineIntroducao {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
     
 }
 
+#outlineIntroducao::after{
+    content: "";
+    position: absolute;
+
+    top: -6px;
+    left: -6px;
+    right: -22px;
+    bottom: -30px;
+
+    border: 2px solid rgb(2, 38, 68);
+    pointer-events: none;
+
+}
+
 #biografiaElvis{
-    display: flex;
-    flex-direction: row;
     text-align: justify;
     font-style: italic;
     width: 450px;
@@ -182,6 +174,7 @@ margin-bottom: 10px;
 #colunaTextoIntroducao{
     display: flex;
     flex-direction: column;
+    width: 675px;
     gap: 30px;
     margin-bottom: 80px;
     
@@ -207,13 +200,56 @@ margin-bottom: 10px;
        
 }
 
+#conteinerBandasClassicas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin-top: 20px;
+
+}
+
+#conteinerMetalESeusSubgeneros a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+
 #outlineBandasClassicas{
-    outline-style: solid;
-    border-style: solid;
-    outline-color: rgb(2, 38, 68);
-    border-color: #c7c7c7;
-    border-bottom-width: 250px;
-    outline-offset: 6px;
+    position: relative; /*conecta o outline a imagem. sem isso o outline ficaria solto pelo site.*/
+    display: inline-block; /*o "a" é inline(não possibilita mudar largura e altura, o inline block desfaz isso.*/
+    padding-bottom: 250px;
+
+}
+
+/*a expressão "after" dessa ID é uma forma de dar diferentes
+ propriedades para a ID, como tamanho do offset.*/
+#outlineBandasClassicas::after{
+    content: ""; /*necessário para o after funcionar*/
+    position: absolute; /*permite que o objeto permaneça flutuando ao lado do card pai, usando também do position: relative.*/
     
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -15px;
+    
+    border: 2px solid rgb(2, 38, 68);
+    pointer-events: none; /*impossibilita o outline de ser clicado.*/
+}
+
+#textoBandasClassicas{
+    justify-content: center;
+    text-align: justify;
+    width: 450px;
+
+}
+
+#textoMetalESeusSubgeneros{
+    width: 450px;
 
 }
